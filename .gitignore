@@ -1,0 +1,11 @@
+*.tar.xz
+*.o
+*.so
+aula-hidfix.so
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.exe
+*.msi
+

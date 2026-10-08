@@ -1,0 +1,5 @@
+# AULA F75 (SinoWealth 258a:010c) — grant logged-in user access to the
+# raw HID nodes so the AULA software (via Wine/Bottles) can configure it.
+# Covers the wired connection and any AULA/SinoWealth 2.4G dongle.
+KERNEL=="hidraw*", ATTRS{idVendor}=="258a", TAG+="uaccess", MODE="0660"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="258a", TAG+="uaccess"
